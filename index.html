@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Festival</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #FFFDD0, #F5DEB3);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            text-align: center;
+            color: #333;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Main Content */
+        .content {
+            padding: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeIn 3s ease;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Button Styles */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #ffffffd9;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        section p, section ul {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Content -->
+    <div class="content">
+        <h1>School Festival: A Celebration of Culture and Community!</h1>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="button-container">
+        <a href="#about" class="button">ℹ️ About the Event</a>
+        <a href="#schedule" class="button">🕒 Schedule</a>
+        <a href="#audience" class="button">👥 Audience Info</a>
+        <a href="#volunteer" class="button">🙌 Volunteer/Donate</a>
+    </div>
+
+    <!-- About the Event Section -->
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>
+            The School Festival is a celebration of culture, talent, and community. Join us to experience a day full of performances, exhibitions, and fun activities!
+        </p>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <h2>Schedule</h2>
+        <p><b>Location: School Auditorium and Grounds</b></p> 
+	<ul>
+            <li>10:00 AM - Opening Ceremony</li>
+            <li>11:00 AM - Art and Science Exhibitions</li>
+            <li>1:00 PM - Cultural Performances</li>
+            <li>3:00 PM - Sports Competitions</li>
+            <li>5:00 PM - Closing Ceremony</li>
+        </ul>
+    </section>
+
+    <!-- Audience Information Section -->
+    <section id="audience">
+        <h2>Audience Info</h2>
+        <p>
+            The festival is open to students, families, and the local community. Free entry for all attendees. Make sure to bring your enthusiasm and energy!
+        </p>
+    </section>
+
+    <!-- Volunteer/Donate Section -->
+    <section id="volunteer">
+        <h2>Volunteer or Donate</h2>
+        <p>
+            Support our event by volunteering or making a donation. Volunteers will assist with event coordination, while donations will help us create an unforgettable experience.
+        </p>
+    </section>
+</body>
+</html>
